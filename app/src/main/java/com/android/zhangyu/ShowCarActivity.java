@@ -52,8 +52,6 @@ public class ShowCarActivity extends AppCompatActivity implements View.OnClickLi
         mTvYear = (TextView) findViewById(R.id.tv_year);
         mTvPrice = (TextView) findViewById(R.id.tv_price);
         mTvContent = (TextView) findViewById(R.id.tv_content);
-        mBtnCommit = (Button) findViewById(R.id.btn_commit);
-        mBtnCommit.setOnClickListener(this);
         //从数据库中查询数据
         List<HistoryBean> queryll = new HistoryDao(this).queryll();
         HistoryBean car = queryll.get(0);
